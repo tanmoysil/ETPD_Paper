@@ -17,10 +17,10 @@ function [freq_max, pow, pow_avg] = peakfreq_using_wavelet(signal, fs)
 % Date: May 2025
 
 
-% Define frequency range of interest (2-20 Hz covers most pathological tremors)
-freqs = 2:20;  % Increased frequency resolution for more precise peaks
+% Define frequency range of interest
+freqs = 2:20; 
 
-% Calculate wavelet spectrum (signal must be transposed for WaveletSpecEddy)
+% Calculate wavelet spectrum (signal must be transposed for WaveletSpec)
 spectrum = WaveletSpec(signal', 1/fs, freqs);
 
 % Calculate power as squared magnitude of the spectrum
