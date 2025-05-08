@@ -144,7 +144,7 @@ if ~isempty(gcp('nocreate'))
 end
 
 % Save processed data
-output_file = 'harmonics_features_PD_ET.mat';
+output_file = '';
 save(output_file, 'hoi2', 'hoi3', 'hoi_summative', 'hoi_all', 'hoi_non_harmonics', 'max_freq', 'power', 'power_avg');
 fprintf('Harmonic features saved to %s\n', output_file);
 
