@@ -31,18 +31,18 @@ disease = {'PD', 'ET'};
 % Set up paths based on operating system
 if ismac
     dir_pats = {
-        '/Users/tanmoysil/Library/Mobile Documents/com~apple~CloudDocs/DAT/tremor data/tremor Sorted Data/PD', ...
-        '/Users/tanmoysil/Library/Mobile Documents/com~apple~CloudDocs/DAT/tremor data/tremor Sorted Data/ET'
+        '', ...
+        ''
     };
-    addpath('/Users/tanmoysil/Library/Mobile Documents/com~apple~CloudDocs/DAT/tremor data/with_wavelet/hsic/');
+    addpath('');
     pool_size = 10;
 elseif isunix
     dir_pats = {
-        '/home/visualdbs/User_Folders/Tanmoy/tremor_freqmix/ETPD_Sorted_Data/PD/', ...
-        '/home/visualdbs/User_Folders/Tanmoy/tremor_freqmix/ETPD_Sorted_Data/ET/'
+        '', ...
+        ''
     };
-    addpath('/home/visualdbs/User_Folders/Tanmoy/tremor_freqmix/with_wavelet/true/');
-    addpath('/home/visualdbs/User_Folders/Tanmoy/tremor_freqmix/wavelet_4th_harmonic_true/');
+    addpath('');
+    addpath('');
     pool_size = 32;
 end
 
