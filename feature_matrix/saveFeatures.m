@@ -23,9 +23,9 @@ clearvars;
 clc;
 
 % Define data file paths
-HOI_FILE_PATH = '/home/visualdbs/User_Folders/Tanmoy/tremor_freqmix/wavelet_harmonic_true/hoi_20.mat';
-FREQ_POW_FILE_PATH = '/home/visualdbs/User_Folders/Tanmoy/tremor_freqmix/wavelet_harmonic_true/freqpow_wavelet_20.mat';
-OUTPUT_PATH = '/home/visualdbs/Documents/GitHub/classifier/X_y';
+HOI_FILE_PATH = '';
+FREQ_POW_FILE_PATH = '';
+OUTPUT_PATH = '';
 
 % Load the pre-processed harmonic feature data
 load(HOI_FILE_PATH);
