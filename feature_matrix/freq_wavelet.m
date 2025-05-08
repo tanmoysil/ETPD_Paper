@@ -16,8 +16,6 @@ function [freq_max, pow, pow_avg] = peakfreq_using_wavelet(signal, fs)
 % Author: Tanmoy Sil, University Hospital Würzburg
 % Date: May 2025
 
-% Import necessary dependencies
-import freqmix.spectrum.*
 
 % Define frequency range of interest (2-20 Hz covers most pathological tremors)
 freqs = 2:20;  % Increased frequency resolution for more precise peaks
